@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_black"
+        android:paddingLeft="30dp"
+        android:paddingTop="100dp"
+        android:paddingBottom="50dp"
+        android:text="Log in"
+        android:textColor="#777676"
+        android:textSize="50sp" />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/textviewborder"
+        android:drawableLeft="@drawable/baseline_mail_outline_24"
+        android:ems="10"
+        android:fontFamily="@font/nunito_black"
+        android:hint="   EMAIL"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textColor="#777676"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/textviewborder"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:ems="10"
+        android:fontFamily="@font/nunito_black"
+        android:hint="   PASSWORD"
+        android:inputType="textVisiblePassword"
+        android:paddingLeft="10dp"
+        android:textColor="#777676"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/forgotPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:clickable="true"
+        android:fontFamily="@font/nunito_black"
+        android:text="Forgot Password?"
+        android:textColor="#777676"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="#FE850A"
+        android:text="Log in"
+        android:textColor="#777676"
+        android:textSize="25dp"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/signUpText"
+        android:layout_width="317dp"
+        android:layout_height="39dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="230dp"
+        android:fontFamily="@font/nunito_black"
+        android:text="Don't have an account? Sign Up"
+        android:textColor="#FE850A"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
