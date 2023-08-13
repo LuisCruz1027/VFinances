@@ -3,15 +3,21 @@ package com.example.vfinancesproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
+
+
+
+import java.util.ArrayList;
 
 public class LoginActivity extends AppCompatActivity {
 
     DBHelper db;
     Button loginButton;
     EditText passText,emailText;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +28,8 @@ public class LoginActivity extends AppCompatActivity {
         Intent intentTesting = new Intent(LoginActivity.this, RemoveTransaction.class);
         loginButton =(Button) findViewById(R.id.loginButton);
         db = new DBHelper(this);
+
+
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,5 +50,9 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+
+
     }
+
+
 }
