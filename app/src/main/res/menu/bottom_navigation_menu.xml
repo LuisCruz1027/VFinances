@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/home"
+        android:title="@string/overview_text" />
+    <item
+        android:id="@+id/walletIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/icon_awesome_wallet"
+        android:title="@string/wallet_text" />
+    <item
+        android:id="@+id/budgetIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/icon_awesome_piggy_bank"
+        android:title="@string/budget_text" />
+    <item
+        android:id="@+id/insightIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/icon_ionic_md_bulb"
+        android:title="@string/insights_text" />
+</menu>
