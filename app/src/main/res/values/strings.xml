@@ -1,36 +1,3 @@
 <resources>
     <string name="app_name">VFinances</string>
-    <string name="v_finances_text">V - Finances</string>
-    <string name="v_finances_motto">Financing made Simple For Students Made by Students</string>
-    <string name="sign_up">Sign Up</string>
-    <string name="name_input">NAME</string>
-    <string name="email_input">EMAIL</string>
-    <string name="password_input">PASSWORD</string>
-    <string name="confirm_password_input">CONFIRM PASSWORD</string>
-    <string name="sign_up_button">Sign Up</string>
-    <string name="already_log_in_button">Already have an account? Log In</string>
-    <string name="income_switch">Turn off for income</string>
-    <string name="text_budget">$118 under budget this month</string>
-    <string name="wallet_typing">$0.00</string>
-    <string name="school_tag">School</string>
-    <string name="tech_tag">Tech</string>
-    <string name="edit_tag">Edit Tags</string>
-    <string name="number_one">1</string>
-    <string name="number_four">4</string>
-    <string name="number_seven">7</string>
-    <string name="number_two">2</string>
-    <string name="number_three">3</string>
-    <string name="number_five">5</string>
-    <string name="number_six">6</string>
-    <string name="number_eight">8</string>
-    <string name="number_nine">9</string>
-    <string name="number_zero">0</string>
-    <string name="overview_text">Overview</string>
-    <string name="wallet_text">Wallet</string>
-    <string name="budget_text">Budget</string>
-    <string name="insights_text">Insights</string>
-    <string name="notifications_text">Notifications</string>
-    <string name="on_expenses">Enter Expense</string>
-    <string name="off_income">Enter Income</string>
-    <string name="notifications_message">Remember to set your budget for this month</string>
 </resources>
