@@ -3,12 +3,20 @@ package com.example.vfinances;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
 
-public class WalletScreen extends AppCompatActivity {
+public class WalletScreen extends AppCompatActivity
+{
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wallet_screen);
+
+        Button schoolTag = findViewById(R.id.schoolTag);
+        Button techTag = findViewById(R.id.techTag);
+        Button editTag = findViewById(R.id.editTag);
+
     }
 }

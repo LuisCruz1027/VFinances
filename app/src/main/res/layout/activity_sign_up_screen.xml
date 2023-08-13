@@ -22,7 +22,7 @@
             android:paddingTop="70sp"
             android:paddingBottom="30sp"
             android:text="@string/sign_up"
-            android:textColor="@color/orange2"
+            android:textColor="@color/orange"
             android:textSize="50sp" />
 
         <EditText
@@ -40,9 +40,9 @@
             android:hint="@string/name_input"
             android:inputType="text"
             android:outlineProvider="none"
-            android:paddingLeft="10dp"
-            android:textColor="@color/orange2"
-            android:textColorHint="@color/orange"
+            android:paddingLeft="13dp"
+            android:textColor="@color/orange"
+            android:textColorHint="@color/opacity_orange"
             android:textSize="20sp"
             android:visibility="visible" />
 
@@ -60,21 +60,24 @@
             android:fontFamily="@font/nunito_black"
             android:hint="@string/email_input"
             android:inputType="textEmailAddress"
-            android:paddingLeft="10dp"
-            android:textColor="@color/orange2"
-            android:textColorHint="@color/orange"
+            android:paddingLeft="13dp"
+            android:textColor="@color/orange"
+            android:textColorHint="@color/opacity_orange"
             android:textSize="20sp" />
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordInputLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
             android:hint="@string/password_input"
-            android:textColorHint="@color/orange"
+            android:textColorHint="@color/opacity_orange"
             app:hintEnabled="true"
             app:passwordToggleDrawable="@drawable/eye"
             app:passwordToggleEnabled="true"
-            app:passwordToggleTint="@color/orange2">
+            app:passwordToggleTint="@color/orange"
+            app:startIconDrawable="@drawable/lock"
+            app:startIconTint="@color/orange">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/passwordInput"
@@ -86,7 +89,37 @@
                 android:background="@drawable/border_tx"
                 android:fontFamily="@font/nunito_black"
                 android:paddingTop="5dp"
-                android:textColor="@color/orange2"
+                android:paddingBottom="5dp"
+                android:textColor="@color/orange"
+                android:textSize="20sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/confirmPasswordInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="-350dp"
+            android:layout_marginRight="25dp"
+            android:hint="@string/confirm_password_input"
+            android:textColorHint="@color/opacity_orange"
+            app:hintEnabled="true"
+            app:passwordToggleDrawable="@drawable/eye"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/orange"
+            app:startIconDrawable="@drawable/lock"
+            app:startIconTint="@color/orange">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirmPasswordInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_tx"
+                android:fontFamily="@font/nunito_black"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/orange"
                 android:textSize="20sp" />
 
             <Button
@@ -94,25 +127,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="70dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="50dp"
                 android:layout_marginRight="70dp"
                 android:background="@drawable/button_border"
                 android:fontFamily="@font/nunito_black"
                 android:text="@string/sign_up_button"
-                android:textColor="@color/orange2"
+                android:textColor="@color/orange"
                 android:textSize="25sp"
-                app:strokeColor="@color/orange2" />
+                app:strokeColor="@color/orange" />
 
             <Button
                 android:id="@+id/alreadyLogInButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="250dp"
+                android:layout_marginTop="130dp"
                 android:background="@color/transparent_orange"
                 android:fontFamily="@font/nunito_black"
                 android:text="@string/already_log_in_button"
-                android:textColor="@color/grey"
-                android:textSize="23sp" />
+                android:textColor="@color/gray"
+                android:textSize="19sp" />
+
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>

@@ -12,4 +12,6 @@
     <color name="red">#F71010</color>
     <color name="yellow">#F1DA0E</color>
     <color name="light_blue">#41CCFF</color>
+    <color name="transparent_orange">#00FE850A</color>
+    <color name="opacity_orange">#70FE850A</color>
 </resources>

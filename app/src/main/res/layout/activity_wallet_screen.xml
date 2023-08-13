@@ -27,10 +27,10 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/nunito"
                     android:text="@string/income_switch"
-                    android:textColor="@color/orange2"
+                    android:textColor="@color/orange"
                     android:textSize="15sp"
                     android:textStyle="bold"
-                    android:thumbTint="@color/orange2"
+                    android:thumbTint="@color/orange"
                     android:visibility="visible" />
 
                 <TextView
@@ -52,7 +52,7 @@
                     android:layout_marginLeft="130dp"
                     android:layout_weight="1"
                     android:text="@string/on_expenses"
-                    android:textColor="@color/orange2"
+                    android:textColor="@color/orange"
                     android:textSize="14sp" />
 
             </LinearLayout>
@@ -89,7 +89,7 @@
                     android:gravity="center"
                     android:hint="@string/wallet_typing"
                     android:inputType="numberDecimal"
-                    android:textColor="@color/grey"
+                    android:textColor="@color/gray"
                     android:textColorHint="@color/grey"
                     android:textSize="70sp" />
 
@@ -136,7 +136,7 @@
                         android:backgroundTint="@color/white"
                         android:fontFamily="@font/nunito_bold"
                         android:text="@string/edit_tag"
-                        android:textColor="@color/grey_light"
+                        android:textColor="@color/lightish_gray"
                         android:textSize="10sp" />
                 </LinearLayout>
 
@@ -161,7 +161,7 @@
                         android:background="@color/transparent_orange"
                         android:fontFamily="@font/nunito_bold"
                         android:text="@string/number_one"
-                        android:textColor="@color/grey"
+                        android:textColor="@color/gray"
                         android:textSize="40sp" />
 
                     <Button
@@ -173,7 +173,7 @@
                         android:background="@color/transparent_orange"
                         android:fontFamily="@font/nunito_bold"
                         android:text="@string/number_two"
-                        android:textColor="@color/grey"
+                        android:textColor="@color/gray"
                         android:textSize="40sp" />
 
                     <Button
@@ -185,7 +185,7 @@
                         android:background="@color/transparent_orange"
                         android:fontFamily="@font/nunito_bold"
                         android:text="@string/number_three"
-                        android:textColor="@color/grey"
+                        android:textColor="@color/gray"
                         android:textSize="40sp" />
                 </LinearLayout>
 
@@ -202,7 +202,7 @@
                         android:background="@color/transparent_orange"
                         android:fontFamily="@font/nunito_bold"
                         android:text="@string/number_four"
-                        android:textColor="@color/grey"
+                        android:textColor="@color/gray"
                         android:textSize="40sp" />
 
                     <Button
@@ -213,7 +213,7 @@
                         android:background="@color/transparent_orange"
                         android:fontFamily="@font/nunito_bold"
                         android:text="@string/number_five"
-                        android:textColor="@color/grey"
+                        android:textColor="@color/gray"
                         android:textSize="40sp" />
 
                     <Button
@@ -224,7 +224,7 @@
                         android:background="@color/transparent_orange"
                         android:fontFamily="@font/nunito_bold"
                         android:text="@string/number_six"
-                        android:textColor="@color/grey"
+                        android:textColor="@color/gray"
                         android:textSize="40sp" />
                 </LinearLayout>
 
@@ -241,7 +241,7 @@
                         android:background="@color/transparent_orange"
                         android:fontFamily="@font/nunito_bold"
                         android:text="@string/number_seven"
-                        android:textColor="@color/grey"
+                        android:textColor="@color/gray"
                         android:textSize="40sp" />
 
                     <Button
@@ -252,7 +252,7 @@
                         android:background="@color/transparent_orange"
                         android:fontFamily="@font/nunito_bold"
                         android:text="@string/number_eight"
-                        android:textColor="@color/grey"
+                        android:textColor="@color/gray"
                         android:textSize="40sp" />
 
                     <Button
@@ -263,7 +263,7 @@
                         android:background="@color/transparent_orange"
                         android:fontFamily="@font/nunito_bold"
                         android:text="@string/number_nine"
-                        android:textColor="@color/grey"
+                        android:textColor="@color/gray"
                         android:textSize="40sp" />
                 </LinearLayout>
 
@@ -293,7 +293,7 @@
                         android:background="@color/transparent_orange"
                         android:fontFamily="@font/nunito_bold"
                         android:text="@string/number_zero"
-                        android:textColor="@color/grey"
+                        android:textColor="@color/gray"
                         android:textSize="40sp" />
 
                     <Button
