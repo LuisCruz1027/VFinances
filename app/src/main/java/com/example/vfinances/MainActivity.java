@@ -1,7 +1,7 @@
 package com.example.vfinances;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.*;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
