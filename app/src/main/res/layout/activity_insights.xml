@@ -90,7 +90,7 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/financialButton"
         android:layout_width="match_parent"
         android:layout_height="101dp"
         android:layout_marginLeft="10dp"
@@ -119,7 +119,7 @@
         android:textSize="25sp" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/investButton"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginLeft="10dp"

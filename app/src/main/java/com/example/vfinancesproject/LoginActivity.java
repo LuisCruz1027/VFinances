@@ -1,23 +1,46 @@
 package com.example.vfinancesproject;
 
-import androidx.appcompat.app.AppCompatActivity;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
-import android.widget.TextView;
+import android.view.View;
+import android.widget.*;
 
 public class LoginActivity extends AppCompatActivity {
+
+    DBHelper db;
+    Button loginButton;
+    EditText passText,emailText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
-        TextView emailText = findViewById(R.id.emailText);
-        TextView passText = findViewById(R.id.passwordText);
-        Button loginButton = findViewById(R.id.loginButton);
-        Intent intent = new Intent(LoginActivity.this, testingActivity.class);
-        Intent intent1 = new Intent(LoginActivity.this, insightsActivity.class);
+        emailText =(EditText) findViewById(R.id.emailText);
+        passText =(EditText) findViewById(R.id.passwordText);
+        Intent intentTesting = new Intent(LoginActivity.this, RemoveTransaction.class);
+        loginButton =(Button) findViewById(R.id.loginButton);
+        db = new DBHelper(this);
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String ema = emailText.getText().toString().trim();
+                String pas = passText.getText().toString().trim();
+                User u = db.checkLogin(ema , pas);
+
+                Intent intentInsights = new Intent(LoginActivity.this, insightsActivity.class);
+
+                if(u != null){
+                    Toast.makeText(getBaseContext(), "Hello, " + ema, Toast.LENGTH_SHORT).show();
+                    startActivity(intentInsights);
+                }
+                else{
+                    Toast.makeText(getBaseContext(), "Incorrect Email/Password", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
     }
 }
