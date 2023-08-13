@@ -5,11 +5,16 @@ import android.widget.*;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.*;
-public class OverView {
+public class OverView extends AppCompatActivity{
     @Override
-    protected void onCreate() {
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.overview);
+
+        Intent mainIntent = getIntent();
+
+        TextView userBankBalance = findViewById(R.id.user_bank_balance);
+
 
     }
-    private EditText hello = (EditText) getView().findViewById(R.id.)
-    Button SeeAll = findViewById(R.id.see_all);
 }
