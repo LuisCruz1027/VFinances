@@ -30,11 +30,11 @@ public class LoginActivity extends AppCompatActivity {
                 String pas = passText.getText().toString().trim();
                 User u = db.checkLogin(ema , pas);
 
-                Intent intentInsights = new Intent(LoginActivity.this, insightsActivity.class);
+                Intent intentRemove = new Intent(LoginActivity.this, RemoveTransaction.class);
 
                 if(u != null){
                     Toast.makeText(getBaseContext(), "Hello, " + ema, Toast.LENGTH_SHORT).show();
-                    startActivity(intentInsights);
+                    startActivity(intentRemove);
                 }
                 else{
                     Toast.makeText(getBaseContext(), "Incorrect Email/Password", Toast.LENGTH_SHORT).show();
