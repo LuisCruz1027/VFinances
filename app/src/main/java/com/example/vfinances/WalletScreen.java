@@ -5,12 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.*;
 
 
 public class WalletScreen extends AppCompatActivity
 {
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -78,5 +78,36 @@ public class WalletScreen extends AppCompatActivity
             Intent editTagIntent = new Intent(WalletScreen.this, EditTagScreen.class);
             startActivity(editTagIntent);
         });
+
+        Switch enterIncome = findViewById(R.id.enterIncome);
+        TextView offIncome = findViewById(R.id.offIncome);
+        TextView onExpenses = findViewById(R.id.onExpenses);
+        enterIncome.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked)
+                {
+                    offIncome.setVisibility(View.GONE);
+                    onExpenses.setVisibility(View.VISIBLE);
+
+                }
+                else
+                {
+                    offIncome.setVisibility(View.VISIBLE);
+                    onExpenses.setVisibility(View.GONE);
+                }
+            }
+        });
+
+        checkIcon.setOnClickListener(view -> {
+            String enteredAmount = walletTyping.getText().toString();
+
+            // Do something with the entered amount
+            // For example, you can log it or process it further
+
+            // Clear the input field after processing
+            walletTyping.setText("");
+        });
+
     }
 }

@@ -47,5 +47,6 @@ public class SignUpScreen extends AppCompatActivity
             Intent alreadyIntent = new Intent(SignUpScreen.this, WalletScreen.class);
             startActivity(alreadyIntent);
         });
+
     }
 }
