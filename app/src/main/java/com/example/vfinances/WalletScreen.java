@@ -2,6 +2,7 @@ package com.example.vfinances;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.*;
 
@@ -18,7 +19,7 @@ public class WalletScreen extends AppCompatActivity
         Button techTag = findViewById(R.id.techTag);
         Button editTag = findViewById(R.id.editTag);
 
-
+        Intent mainIntent = getIntent();
 
     }
 }
