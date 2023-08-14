@@ -29,6 +29,7 @@ public class ForgotPassword extends AppCompatActivity {
             enterEmailAddress.setVisibility(View.INVISIBLE);
             String makeString = "Is " + enterEmailAddress.getText().toString() + " the correct email?";
             pleaseEnterEmail.setText(makeString);
+            /*
             switch(v.getId()){
                 case R.id.yes:
                     if (!isValidEmail(enterEmailAddress.getText().toString())) {
@@ -56,7 +57,23 @@ public class ForgotPassword extends AppCompatActivity {
                 default:
                     break;
             }
-        });
+        });*/
+
+        if (v.getId() == R.id.yes) {
+            if (!isValidEmail(enterEmailAddress.getText().toString())) {
+                Toast.makeText(this, "This email is invalid. Try again", Toast.LENGTH_SHORT).show();
+                Intent intent = getIntent();
+                finish();
+                startActivity(intent);
+            } else {
+                // Your email sending logic for 'yes' case
+            }
+        } else if (v.getId() == R.id.no) {
+            Intent intent = getIntent();
+            finish();
+            startActivity(intent);
+        }
+    });
 
         backToHome.setOnClickListener(v ->{
             Intent myIntent = new Intent(getApplicationContext(), MainActivity.class);

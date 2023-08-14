@@ -248,7 +248,7 @@
                         android:textSize="40sp" />
 
                     <Button
-                        android:id="@+id/button8"
+                        android:id="@+id/numberEight"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -312,13 +312,21 @@
 
                 </LinearLayout>
 
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </FrameLayout>
+
                 <com.google.android.material.bottomnavigation.BottomNavigationView
                     android:id="@+id/bottomNavigation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:itemIconTint="@color/orange"
                     app:labelVisibilityMode="labeled"
-                    app:menu="@menu/bottom_navigation_menu" />
+                    app:menu="@menu/bottom_navigation_menu">
+
+                </com.google.android.material.bottomnavigation.BottomNavigationView>
 
             </LinearLayout>
 
