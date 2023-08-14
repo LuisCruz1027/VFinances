@@ -37,10 +37,11 @@ public class LoginActivity extends AppCompatActivity {
                 String pas = passText.getText().toString().trim();
                 User u = db.checkLogin(ema , pas);
                 Intent intentRemove = new Intent(LoginActivity.this, insightsActivity.class);
-                Intent intentTransaction = new Intent(LoginActivity.this, RemoveTransaction.class);
+                Intent intentTransaction = new Intent(LoginActivity.this, removeTransaction.class);
 
 
                 if(u != null){
+
                     Toast.makeText(getBaseContext(), "Hello, " + ema, Toast.LENGTH_SHORT).show();
                     startActivity(intentTransaction);
                 }
