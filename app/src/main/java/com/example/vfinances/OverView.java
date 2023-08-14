@@ -8,15 +8,5 @@ public class OverView extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_overview);
-
-        Intent mainIntent = getIntent();
-
-        TextView userBankBalance = findViewById(R.id.user_bank_balance);
-
-
-    }
-
-    public void onBtnClick() {
-
     }
 }
