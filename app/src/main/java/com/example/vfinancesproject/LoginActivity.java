@@ -25,7 +25,6 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.login_activity);
         emailText =(EditText) findViewById(R.id.emailText);
         passText =(EditText) findViewById(R.id.passwordText);
-        Intent intentTesting = new Intent(LoginActivity.this, RemoveTransaction.class);
         loginButton =(Button) findViewById(R.id.loginButton);
         db = new DBHelper(this);
 
@@ -37,12 +36,13 @@ public class LoginActivity extends AppCompatActivity {
                 String ema = emailText.getText().toString().trim();
                 String pas = passText.getText().toString().trim();
                 User u = db.checkLogin(ema , pas);
+                Intent intentRemove = new Intent(LoginActivity.this, insightsActivity.class);
+                Intent intentTransaction = new Intent(LoginActivity.this, RemoveTransaction.class);
 
-                Intent intentRemove = new Intent(LoginActivity.this, RemoveTransaction.class);
 
                 if(u != null){
                     Toast.makeText(getBaseContext(), "Hello, " + ema, Toast.LENGTH_SHORT).show();
-                    startActivity(intentRemove);
+                    startActivity(intentTransaction);
                 }
                 else{
                     Toast.makeText(getBaseContext(), "Incorrect Email/Password", Toast.LENGTH_SHORT).show();
