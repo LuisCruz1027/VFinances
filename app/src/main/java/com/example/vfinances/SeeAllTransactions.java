@@ -5,7 +5,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SeeAllTransactions extends AppCompatActivity {
+public class SeeAllTransactions extends AppCompatActivity
+{
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
