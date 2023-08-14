@@ -72,12 +72,19 @@
             android:layout_marginTop="10dp"
             android:hint="@string/password_input"
             android:textColorHint="@color/opacity_orange"
+            app:counterEnabled="false"
+            app:counterTextColor="@color/orange"
+            app:helperTextTextColor="@color/orange"
             app:hintEnabled="true"
+            app:hintTextColor="@color/orange"
             app:passwordToggleDrawable="@drawable/eye"
             app:passwordToggleEnabled="true"
             app:passwordToggleTint="@color/orange"
+            app:placeholderTextColor="@color/orange"
+            app:prefixTextColor="@color/orange"
             app:startIconDrawable="@drawable/lock"
-            app:startIconTint="@color/orange">
+            app:startIconTint="@color/orange"
+            app:suffixTextColor="@color/orange">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/passwordInput"
@@ -88,9 +95,13 @@
                 android:layout_marginRight="25dp"
                 android:background="@drawable/border_tx"
                 android:fontFamily="@font/nunito_black"
+                android:inputType="text|textPassword"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
                 android:textColor="@color/orange"
+                android:textColorHighlight="@color/orange"
+                android:textColorLink="@color/orange"
+                android:textCursorDrawable="@color/black"
                 android:textSize="20sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -104,10 +115,15 @@
             android:layout_marginRight="25dp"
             android:hint="@string/confirm_password_input"
             android:textColorHint="@color/opacity_orange"
+            app:counterTextColor="@color/orange"
+            app:helperTextTextColor="@color/orange"
             app:hintEnabled="true"
+            app:hintTextColor="@color/orange"
             app:passwordToggleDrawable="@drawable/eye"
             app:passwordToggleEnabled="true"
             app:passwordToggleTint="@color/orange"
+            app:placeholderTextColor="@color/orange"
+            app:prefixTextColor="@color/orange"
             app:startIconDrawable="@drawable/lock"
             app:startIconTint="@color/orange">
 
@@ -117,9 +133,13 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/border_tx"
                 android:fontFamily="@font/nunito_black"
+                android:inputType="text|textPassword"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
                 android:textColor="@color/orange"
+                android:textColorHighlight="@color/orange"
+                android:textColorLink="@color/orange"
+                android:textCursorDrawable="@color/black"
                 android:textSize="20sp" />
 
             <Button
