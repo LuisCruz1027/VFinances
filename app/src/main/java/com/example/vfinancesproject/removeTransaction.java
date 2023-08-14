@@ -24,7 +24,7 @@ public class removeTransaction extends AppCompatActivity {
 
         db = new DBHelper(this);
         listItem = new ArrayList<>();
-        userList = findViewById(R.id.users_list);
+        userList = findViewById(R.id.transactions_list);
         viewData();
 
 
