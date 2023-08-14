@@ -1,6 +1,7 @@
 package com.example.vfinances;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.widget.*;
 
@@ -16,17 +17,16 @@ public class Budget extends AppCompatActivity{
         ImageButton wallet = (ImageButton) findViewById(R.id.wallet);
         ImageButton pig = (ImageButton) findViewById(R.id.pig);
         ImageButton lightbulb = (ImageButton) findViewById(R.id.lightbulb);
+        ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressBar);
 
         homeHighlighted.setOnClickListener(v-> {
-            Intent i = new Intent(getApplicationContext(), OverView.class);
-            startActivity(i);
-            setContentView(R.layout.activity_overview);
+            Intent m = new Intent(getApplicationContext(), OverView.class);
+            startActivity(m);
         });
 
         wallet.setOnClickListener(v ->{
-            Intent i = new Intent(getApplicationContext(), WalletScreen.class);
-            startActivity(i);
-            setContentView(R.layout.activity_wallet_screen);
+            Intent n = new Intent(getApplicationContext(), WalletScreen.class);
+            startActivity(n);
         });
 
         pig.setOnClickListener(v ->{
@@ -35,6 +35,8 @@ public class Budget extends AppCompatActivity{
 
         lightbulb.setOnClickListener(v ->{
         });
+
+
 
     }
 

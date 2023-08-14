@@ -10,5 +10,6 @@ public class NotificationsScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notifications_screen);
+
     }
 }

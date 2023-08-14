@@ -66,7 +66,16 @@ public class ForgotPassword extends AppCompatActivity {
                 finish();
                 startActivity(intent);
             } else {
-                // Your email sending logic for 'yes' case
+                Intent i = new Intent(Intent.ACTION_SEND);
+                i.setType("message/rfc822");
+                i.putExtra(Intent.EXTRA_EMAIL  , new String[]{enterEmailAddress.getText().toString()});
+                i.putExtra(Intent.EXTRA_SUBJECT, "Your Password");
+                i.putExtra(Intent.EXTRA_TEXT   , "Your password is: ");
+                try {
+                    startActivity(Intent.createChooser(i, "Send mail..."));
+                } catch (android.content.ActivityNotFoundException ex) {
+                    Toast.makeText(ForgotPassword.this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
+                }
             }
         } else if (v.getId() == R.id.no) {
             Intent intent = getIntent();
@@ -78,7 +87,6 @@ public class ForgotPassword extends AppCompatActivity {
         backToHome.setOnClickListener(v ->{
             Intent myIntent = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(myIntent);
-            setContentView(R.layout.activity_sign_up_screen);
         });
 
 
