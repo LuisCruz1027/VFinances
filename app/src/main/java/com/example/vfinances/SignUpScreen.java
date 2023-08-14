@@ -45,6 +45,7 @@ public class SignUpScreen extends AppCompatActivity
         alreadyLoginButton.setOnClickListener(v ->
         {
             Intent alreadyIntent = new Intent(SignUpScreen.this, WalletScreen.class);
+            startActivity(alreadyIntent);
         });
     }
 }
