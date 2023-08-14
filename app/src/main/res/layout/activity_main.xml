@@ -25,7 +25,7 @@
                 android:layout_marginTop="120dp"
                 android:fontFamily="@font/nunito_black"
                 android:text="@string/v_finances_text"
-                android:textColor="@color/orange2"
+                android:textColor="@color/orange"
                 android:textSize="45sp" />
 
             <TextView
@@ -36,7 +36,7 @@
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/nunito_black"
                 android:text="@string/v_finances_motto"
-                android:textColor="@color/grey"
+                android:textColor="@color/gray"
                 android:textSize="20sp" />
 
             <TextView

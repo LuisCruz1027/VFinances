@@ -36,7 +36,7 @@
             android:layout_marginBottom="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/home__1_" />
+            app:srcCompat="@drawable/home" />
 
         <ImageButton
             android:id="@+id/pig"
@@ -58,7 +58,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/home_highlighted"
             app:layout_constraintTop_toTopOf="@+id/home_highlighted"
-            app:srcCompat="@drawable/icon_awesome_wallet__1_" />
+            app:srcCompat="@drawable/home" />
 
         <ImageButton
             android:id="@+id/lightbulb"
@@ -146,6 +146,7 @@
             android:layout_marginTop="20dp"
             android:backgroundTint="@color/orange"
             android:text="See All"
+            android:onClick="onBtnClick"
             app:layout_constraintEnd_toEndOf="@+id/textView7"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -165,6 +166,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView6"
             app:layout_constraintVertical_bias="0.050000012" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

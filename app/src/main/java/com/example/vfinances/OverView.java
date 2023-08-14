@@ -1,6 +1,4 @@
 package com.example.vfinances;
-import android.util.*;
-import android.view.*;
 import android.widget.*;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,12 +7,16 @@ public class OverView extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.overview);
+        setContentView(R.layout.activity_overview);
 
         Intent mainIntent = getIntent();
 
         TextView userBankBalance = findViewById(R.id.user_bank_balance);
 
+
+    }
+
+    public void onBtnClick() {
 
     }
 }
