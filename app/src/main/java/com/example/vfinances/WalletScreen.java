@@ -3,7 +3,7 @@ package com.example.vfinances;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.Button;
+import android.widget.*;
 
 public class WalletScreen extends AppCompatActivity
 {
@@ -17,6 +17,8 @@ public class WalletScreen extends AppCompatActivity
         Button schoolTag = findViewById(R.id.schoolTag);
         Button techTag = findViewById(R.id.techTag);
         Button editTag = findViewById(R.id.editTag);
+
+
 
     }
 }

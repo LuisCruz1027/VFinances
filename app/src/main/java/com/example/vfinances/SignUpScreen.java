@@ -33,8 +33,18 @@ public class SignUpScreen extends AppCompatActivity
 
         signUpButton.setOnClickListener(v ->
         {
+            String name = nameInput.getText().toString().trim();
+            String em = emailInput.getText().toString().trim();
+            String pass = passwordInput.getText().toString().trim();
+            String conPass = confirmPasswordInput.getText().toString().trim();
+
             Intent signUpIntent = new Intent(SignUpScreen.this, OverView.class);
             startActivity(signUpIntent);
+        });
+
+        alreadyLoginButton.setOnClickListener(v ->
+        {
+            Intent alreadyIntent = new Intent(SignUpScreen.this, WalletScreen.class);
         });
     }
 }
