@@ -16,12 +16,23 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <Button
+                android:id="@+id/arrowBackNoti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/transparent_orange"
+                app:icon="@drawable/baseline_arrow_back_ios_24"
+                app:iconSize="35dp"
+                app:iconTint="@color/orange" />
+
             <TextView
                 android:id="@+id/notificationsText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="90dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
                 android:fontFamily="@font/nunito_black"
                 android:text="@string/notifications_text"
                 android:textColor="@color/orange"
@@ -41,16 +52,19 @@
                 android:textColor="@color/gray"
                 android:textSize="24sp" />
 
+            <Button
+                android:id="@+id/dismissButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:background="@color/transparent_orange"
+                android:fontFamily="@font/nunito"
+                android:text="@string/dismiss_button"
+                android:textColor="@color/orange"
+                android:textSize="20sp" />
+
         </LinearLayout>
     </ScrollView>
-
-    <TextView
-        android:id="@+id/backArrowNoti"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_weight="1"
-        android:drawableLeft="@drawable/baseline_arrow_back_ios_24" />
 
 </RelativeLayout>

@@ -34,4 +34,7 @@
     <string name="off_income">Enter Income</string>
     <string name="notifications_message">Remember to set your budget for this month</string>
     <string name="email_example">jane.doe04@utrgv.edu</string>
+    <string name="tag_text">Tags</string>
+    <string name="new_tag_text">Type new tag here</string>
+    <string name="dismiss_button">Dismiss</string>
 </resources>

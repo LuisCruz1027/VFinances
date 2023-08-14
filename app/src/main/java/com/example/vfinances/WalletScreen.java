@@ -74,5 +74,9 @@ public class WalletScreen extends AppCompatActivity
             }
         });
 
+        editTag.setOnClickListener(v -> {
+            Intent editTagIntent = new Intent(WalletScreen.this, EditTagScreen.class);
+            startActivity(editTagIntent);
+        });
     }
 }
