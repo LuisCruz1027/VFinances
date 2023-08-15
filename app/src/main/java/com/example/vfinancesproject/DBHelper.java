@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -26,8 +27,12 @@ public class DBHelper extends SQLiteOpenHelper {
     private static final String COLUMN_EMAIL = "'email'";
     private static final String COLUMN_ID = "'id'";
     private static final String COLUMN_PASSWORD = "'password'";
+
+
     public DBHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
+        this.context = context;
+        Toast.makeText(context, "Constructor called", Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -41,7 +46,6 @@ public class DBHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS users");
 
     }
-
     public Boolean insertData(User u) {
         SQLiteDatabase myDB = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
