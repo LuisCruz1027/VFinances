@@ -59,7 +59,7 @@
                 android:layout_marginLeft="100dp"
                 android:layout_marginRight="100dp"
                 android:background="@color/transparent_orange"
-                android:fontFamily="@font/nunito"
+                android:fontFamily="@font/nunito_bold"
                 android:text="@string/dismiss_button"
                 android:textColor="@color/orange"
                 android:textSize="20sp" />

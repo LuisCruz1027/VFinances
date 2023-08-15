@@ -156,6 +156,11 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:orientation="horizontal">
 
                     <Button
@@ -315,21 +320,114 @@
 
                 </LinearLayout>
 
-                <FrameLayout
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal">
 
-                </FrameLayout>
+                    <Button
+                        android:id="@+id/homeIconButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="-10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent_orange"
+                        app:icon="@drawable/home"
+                        app:iconSize="25dp"
+                        app:iconTint="@color/orange" />
 
-                <com.google.android.material.bottomnavigation.BottomNavigationView
-                    android:id="@+id/bottomNavigation"
+                    <Button
+                        android:id="@+id/walletIconButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="-10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent_orange"
+                        app:icon="@drawable/icon_awesome_wallet"
+                        app:iconSize="25dp"
+                        app:iconTint="@color/orange" />
+
+                    <Button
+                        android:id="@+id/pigIconButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="-10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent_orange"
+                        app:icon="@drawable/icon_awesome_piggy_bank"
+                        app:iconSize="25dp"
+                        app:iconTint="@color/orange" />
+
+                    <Button
+                        android:id="@+id/lightBulbIconButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="-10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent_orange"
+                        app:icon="@drawable/icon_ionic_md_bulb"
+                        app:iconSize="25dp"
+                        app:iconTint="@color/orange" />
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:itemIconTint="@color/orange"
-                    app:labelVisibilityMode="labeled"
-                    app:menu="@menu/bottom_navigation_menu">
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="39dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
 
-                </com.google.android.material.bottomnavigation.BottomNavigationView>
+                    <TextView
+                        android:id="@+id/overviewIconText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/overview_text"
+                        android:textColor="@color/black"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/walletIconText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/wallet_text"
+                        android:textColor="@color/black"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/pigIconText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/budget_text"
+                        android:textColor="@color/black"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/lightIconText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nunito_bold"
+                        android:paddingRight="-35dp"
+                        android:text="@string/insights_text"
+                        android:textColor="@color/black"
+                        android:textSize="10sp" />
+                </LinearLayout>
 
             </LinearLayout>
 

@@ -109,5 +109,27 @@ public class WalletScreen extends AppCompatActivity
             walletTyping.setText("");
         });
 
+        Button homeIconButton = findViewById(R.id.homeIconButton);
+        Button walletIconButton = findViewById(R.id.walletIconButton);
+        Button pigIconButton = findViewById(R.id.pigIconButton);
+        Button lightBulbIconButton = findViewById(R.id.lightBulbIconButton);
+
+        homeIconButton.setOnClickListener(v -> {
+            Intent userOverview = new Intent(WalletScreen.this, OverView.class);
+            startActivity(userOverview);
+        });
+
+        walletIconButton.setOnClickListener(v -> {
+            Toast.makeText(this, "You're on this activity already.", Toast.LENGTH_SHORT).show();
+        });
+
+        pigIconButton.setOnClickListener(v -> {
+            Intent userPig = new Intent(WalletScreen.this, Budget.class);
+            startActivity(userPig);
+        });
+
+        lightBulbIconButton.setOnClickListener(v -> {
+
+        });
     }
 }
