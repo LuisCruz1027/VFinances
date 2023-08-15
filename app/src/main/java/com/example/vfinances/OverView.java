@@ -1,10 +1,17 @@
 package com.example.vfinances;
+import android.database.Cursor;
 import android.view.View;
 import android.widget.*;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.content.*;
+
+import java.util.ArrayList;
+
 public class OverView extends AppCompatActivity{
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,6 +23,9 @@ public class OverView extends AppCompatActivity{
         Button lightbulb = (Button) findViewById(R.id.lightbulb);
         ImageButton notificationBell = (ImageButton) findViewById(R.id.notification_bell);
         Button seeAll = (Button) findViewById(R.id.see_all);
+        TextView textView6 = (TextView) findViewById(R.id.textView6);
+
+
 
         notificationBell.setOnClickListener(v -> {
             Intent notifBell = new Intent(OverView.this, NotificationsScreen.class);

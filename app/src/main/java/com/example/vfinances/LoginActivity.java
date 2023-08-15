@@ -32,12 +32,19 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                Button forgotPass = (Button) findViewById(R.id.forgotPass);
+
+                forgotPass.setOnClickListener(v -> {
+                    Intent forgot = new Intent(LoginActivity.this, ForgotPassword.class);
+                    startActivity(forgot);
+                });
+
                 String ema = emailText.getText().toString().trim();
                 String pas = passText.getText().toString().trim();
                 User u = db.checkLogin(ema , pas);
                 Intent intentInsights= new Intent(LoginActivity.this, insightsActivity.class);
                 Intent intentRemove = new Intent(LoginActivity.this, removeTransaction.class);
-
 
                 if(u != null){
 
@@ -47,7 +54,11 @@ public class LoginActivity extends AppCompatActivity {
                 else{
                     Toast.makeText(getBaseContext(), "Incorrect Email/Password", Toast.LENGTH_SHORT).show();
                 }
+
             }
+
+
+
         });
 
 

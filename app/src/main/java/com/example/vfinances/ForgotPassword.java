@@ -59,7 +59,7 @@ public class ForgotPassword extends AppCompatActivity {
             }
         });*/
 
-        if (v.getId() == R.id.yes) {
+        yes.setOnClickListener(s ->{
             if (!isValidEmail(enterEmailAddress.getText().toString())) {
                 Toast.makeText(this, "This email is invalid. Try again", Toast.LENGTH_SHORT).show();
                 Intent intent = getIntent();
@@ -77,11 +77,11 @@ public class ForgotPassword extends AppCompatActivity {
                     Toast.makeText(ForgotPassword.this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
                 }
             }
-        } else if (v.getId() == R.id.no) {
-            Intent intent = getIntent();
-            finish();
-            startActivity(intent);
-        }
+        });
+        no.setOnClickListener(t -> {
+            Intent myIntent = new Intent(ForgotPassword.this, ForgotPassword.class);
+            startActivity(myIntent);
+        });
     });
 
         backToHome.setOnClickListener(v ->{
