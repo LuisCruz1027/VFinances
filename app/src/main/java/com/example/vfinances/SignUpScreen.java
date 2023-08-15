@@ -13,7 +13,7 @@ import com.google.android.material.textfield.TextInputLayout;
 
 public class SignUpScreen extends AppCompatActivity
 {
-
+    DBHelper dbHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -31,6 +31,8 @@ public class SignUpScreen extends AppCompatActivity
         Button signUpButton = findViewById(R.id.signUpButton);
         Button alreadyLoginButton = findViewById(R.id.alreadyLogInButton);
 
+        dbHelper = new DBHelper(this);
+
         signUpButton.setOnClickListener(v ->
         {
             String name = nameInput.getText().toString().trim();
@@ -44,6 +46,9 @@ public class SignUpScreen extends AppCompatActivity
                 // Proceed with password confirmation check
                 if (pass.equals(conPass))
                 {
+                    User newUser = new User(name, em, pass);
+                    dbHelper.insertUser(newUser);
+
                     Intent signUpIntent = new Intent(SignUpScreen.this, OverView.class);
                     startActivity(signUpIntent);
 
@@ -66,6 +71,10 @@ public class SignUpScreen extends AppCompatActivity
             Intent alreadyIntent = new Intent(SignUpScreen.this, WalletScreen.class);
             startActivity(alreadyIntent);
         });
-
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        dbHelper.close();
     }
 }
