@@ -1,20 +1,19 @@
-package com.example.vfinancesproject;
+package com.example.vfinances;
 
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
 
 
-
-import java.util.ArrayList;
+import com.example.vfinancesproject.DBHelper;
+import com.example.vfinancesproject.User;
 
 public class LoginActivity extends AppCompatActivity {
 
-    DBHelper db;
+    com.example.vfinancesproject.DBHelper db;
     Button loginButton;
     EditText passText,emailText;
 

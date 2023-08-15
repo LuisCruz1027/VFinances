@@ -1,4 +1,4 @@
-package com.example.vfinancesproject;
+package com.example.vfinances;
 
 import java.util.ArrayList;
 

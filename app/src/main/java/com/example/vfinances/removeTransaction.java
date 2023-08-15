@@ -1,15 +1,14 @@
-package com.example.vfinancesproject;
+package com.example.vfinances;
 
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.ArrayList;
+import com.example.vfinancesproject.DBHelperTransactions;
 
 public class removeTransaction extends AppCompatActivity {
 

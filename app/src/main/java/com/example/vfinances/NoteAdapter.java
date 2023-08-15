@@ -1,4 +1,4 @@
-package com.example.vfinancesproject;
+package com.example.vfinances;
 
 import android.content.Context;
 import android.view.LayoutInflater;
