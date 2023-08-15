@@ -48,5 +48,14 @@ public class SignUpScreen extends AppCompatActivity
             startActivity(alreadyIntent);
         });
 
+        if (passwordInput.equals(confirmPasswordInput))
+        {
+            Intent signUpIntent = new Intent(SignUpScreen.this, OverView.class);
+            startActivity(signUpIntent);
+        }
+        else
+        {
+            confirmPasswordInputLayout.setError("Password do not match");
+        }
     }
 }
