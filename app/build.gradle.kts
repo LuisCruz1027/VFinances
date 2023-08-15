@@ -46,4 +46,7 @@ dependencies {
     implementation("com.github.blackfizz:eazegraph:1.2.2@aar")
     implementation("com.nineoldandroids:library:2.4.0")
 
+    //
+    implementation("androidx.recyclerview:recyclerview-selection:1.1.0")
+
 }
