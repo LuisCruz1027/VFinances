@@ -5,7 +5,7 @@
     android:id="@+id/userBalance"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightish_gray">
+    android:background="@color/white">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -29,50 +29,6 @@
             app:layout_constraintTop_toBottomOf="@+id/user_bank_balance"
             app:layout_constraintVertical_bias="0.060000002" />
 
-        <ImageButton
-            android:id="@+id/home_highlighted"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginBottom="12dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/home" />
-
-        <ImageButton
-            android:id="@+id/pig"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginBottom="12dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/wallet"
-            app:layout_constraintTop_toTopOf="@+id/wallet"
-            app:srcCompat="@drawable/icon_awesome_piggy_bank" />
-
-        <ImageButton
-            android:id="@+id/wallet"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginBottom="12dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/home_highlighted"
-            app:layout_constraintTop_toTopOf="@+id/home_highlighted"
-            app:srcCompat="@drawable/home" />
-
-        <ImageButton
-            android:id="@+id/lightbulb"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="12dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/pig"
-            app:layout_constraintTop_toTopOf="@+id/pig"
-            app:srcCompat="@drawable/icon_ionic_md_bulb" />
 
         <TextView
             android:id="@+id/user_bank_balance"
@@ -170,9 +126,10 @@
             app:layout_constraintVertical_bias="0.051" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/user"
             android:layout_width="66dp"
             android:layout_height="60dp"
+            android:backgroundTint="@color/white"
             app:layout_constraintBottom_toTopOf="@+id/textView5"
             app:layout_constraintEnd_toStartOf="@+id/user_bank_balance"
             app:layout_constraintHorizontal_bias="0.0"
@@ -196,8 +153,8 @@
             android:layout_width="389dp"
             android:layout_height="68dp"
             android:background="@drawable/rounded_corner_nofill"
-            android:visibility="invisible"
             android:text=""
+            android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/transaction_one" />
@@ -207,8 +164,8 @@
             android:layout_width="389dp"
             android:layout_height="68dp"
             android:background="@drawable/rounded_corner_nofill"
-            android:visibility="invisible"
             android:text=""
+            android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/transaction_two" />
@@ -217,11 +174,122 @@
             android:id="@+id/notification_bell"
             android:layout_width="63dp"
             android:layout_height="63dp"
+            android:backgroundTint="@color/white"
             app:layout_constraintBottom_toTopOf="@+id/textView5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/user_bank_balance"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/icon_ionic_md_notifications_outline" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <Button
+                android:id="@+id/homeIconButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@color/transparent_orange"
+                app:icon="@drawable/home"
+                app:iconSize="25dp"
+                app:iconTint="@color/orange" />
+
+            <Button
+                android:id="@+id/walletIconButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@color/transparent_orange"
+                app:icon="@drawable/icon_awesome_wallet"
+                app:iconSize="25dp"
+                app:iconTint="@color/orange" />
+
+            <Button
+                android:id="@+id/pigIconButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@color/transparent_orange"
+                app:icon="@drawable/icon_awesome_piggy_bank"
+                app:iconSize="25dp"
+                app:iconTint="@color/orange" />
+
+            <Button
+                android:id="@+id/lightBulbIconButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@color/transparent_orange"
+                app:icon="@drawable/icon_ionic_md_bulb"
+                app:iconSize="25dp"
+                app:iconTint="@color/orange" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout2">
+
+            <TextView
+                android:id="@+id/overviewIconText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/overview_text"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/walletIconText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/wallet_text"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/pigIconText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/budget_text"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/lightIconText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_bold"
+                android:paddingRight="-35dp"
+                android:text="@string/insights_text"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+        </LinearLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
