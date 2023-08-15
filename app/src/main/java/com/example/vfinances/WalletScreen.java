@@ -11,6 +11,20 @@ import android.widget.*;
 
 public class WalletScreen extends AppCompatActivity
 {
+    private TransactionDBHelper dbHelper;
+    boolean isSchoolTagSelected = false;
+    boolean isTechTagSelected = false;
+
+    private void updateTagButtonState(Button tagButton, boolean isSelected) {
+        if (isSelected) {
+            // Change the background color to indicate selection
+            tagButton.setBackgroundResource(R.drawable.button_tag_selected);
+        } else {
+            // Change the background color back to the default
+            tagButton.setBackgroundResource(R.drawable.border_tag);
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -99,15 +113,43 @@ public class WalletScreen extends AppCompatActivity
             }
         });
 
+        dbHelper = new TransactionDBHelper(this);
+
+
         checkIcon.setOnClickListener(view -> {
             String enteredAmount = walletTyping.getText().toString();
 
-            // Do something with the entered amount
-            // For example, you can log it or process it further
+            if (!enteredAmount.isEmpty())
+            {
+                double amount = Double.parseDouble(enteredAmount.substring(1));
+                String type = enterIncome.isChecked() ? "income" : "expenses";
+                String tag = "";
 
-            // Clear the input field after processing
-            walletTyping.setText("");
+                if (schoolTag.isSelected())
+                {
+                    tag = schoolTag.getText().toString();
+                }
+                else if (techTag.isSelected())
+                {
+                    tag = techTag.getText().toString();
+                }
+
+                dbHelper.insertTransaction(type, amount, tag);
+
+                walletTyping.setText("");
+            }
         });
+
+        schoolTag.setOnClickListener(v -> {
+            isSchoolTagSelected = !isSchoolTagSelected;
+            updateTagButtonState(schoolTag, isSchoolTagSelected);
+        });
+
+        techTag.setOnClickListener(v -> {
+            isTechTagSelected = !isTechTagSelected;
+            updateTagButtonState(techTag, isTechTagSelected);
+        });
+
 
         Button homeIconButton = findViewById(R.id.homeIconButton);
         Button walletIconButton = findViewById(R.id.walletIconButton);
@@ -131,5 +173,11 @@ public class WalletScreen extends AppCompatActivity
         lightBulbIconButton.setOnClickListener(v -> {
 
         });
+    }
+    @Override
+    protected void onDestroy()
+    {
+        super.onDestroy();
+        dbHelper.close();
     }
 }

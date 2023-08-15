@@ -116,6 +116,7 @@
             android:hint="@string/confirm_password_input"
             android:textColorHint="@color/opacity_orange"
             app:counterTextColor="@color/orange"
+            app:endIconMode="none"
             app:helperTextTextColor="@color/orange"
             app:hintEnabled="true"
             app:hintTextColor="@color/orange"

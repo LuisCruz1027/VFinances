@@ -38,8 +38,27 @@ public class SignUpScreen extends AppCompatActivity
             String pass = passwordInput.getText().toString().trim();
             String conPass = confirmPasswordInput.getText().toString().trim();
 
-            Intent signUpIntent = new Intent(SignUpScreen.this, OverView.class);
-            startActivity(signUpIntent);
+            // Check if both password fields are not empty
+            if (!pass.isEmpty() && !conPass.isEmpty())
+            {
+                // Proceed with password confirmation check
+                if (pass.equals(conPass))
+                {
+                    Intent signUpIntent = new Intent(SignUpScreen.this, OverView.class);
+                    startActivity(signUpIntent);
+
+                } else
+                {
+                    confirmPasswordInputLayout.setError(null);
+                    // Passwords do not match, show error message
+                    confirmPasswordInputLayout.setError("Passwords do not match");
+                }
+            } else
+            {
+                confirmPasswordInputLayout.setError(null);
+                // One or both password fields are empty, show error message
+                confirmPasswordInputLayout.setError("Please enter both passwords");
+            }
         });
 
         alreadyLoginButton.setOnClickListener(v ->
@@ -48,14 +67,5 @@ public class SignUpScreen extends AppCompatActivity
             startActivity(alreadyIntent);
         });
 
-        if (passwordInput.equals(confirmPasswordInput))
-        {
-            Intent signUpIntent = new Intent(SignUpScreen.this, OverView.class);
-            startActivity(signUpIntent);
-        }
-        else
-        {
-            confirmPasswordInputLayout.setError("Password do not match");
-        }
     }
 }
