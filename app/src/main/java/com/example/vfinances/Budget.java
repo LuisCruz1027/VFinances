@@ -13,10 +13,10 @@ public class Budget extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_budget);
 
-        ImageButton homeHighlighted = (ImageButton) findViewById(R.id.home_highlighted);
-        ImageButton wallet = (ImageButton) findViewById(R.id.wallet);
-        ImageButton pig = (ImageButton) findViewById(R.id.pig);
-        ImageButton lightbulb = (ImageButton) findViewById(R.id.lightbulb);
+        Button homeHighlighted = (Button) findViewById(R.id.home_highlighted);
+        Button wallet = (Button) findViewById(R.id.wallet);
+        Button pig = (Button) findViewById(R.id.pig);
+        Button lightbulb = (Button) findViewById(R.id.lightbulb);
         ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressBar);
 
         homeHighlighted.setOnClickListener(v-> {

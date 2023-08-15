@@ -189,7 +189,7 @@
             app:layout_constraintBottom_toBottomOf="parent">
 
             <Button
-                android:id="@+id/homeIconButton"
+                android:id="@+id/home_highlighted"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -202,7 +202,7 @@
                 app:iconTint="@color/orange" />
 
             <Button
-                android:id="@+id/walletIconButton"
+                android:id="@+id/wallet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -215,7 +215,7 @@
                 app:iconTint="@color/orange" />
 
             <Button
-                android:id="@+id/pigIconButton"
+                android:id="@+id/pig"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -228,7 +228,7 @@
                 app:iconTint="@color/orange" />
 
             <Button
-                android:id="@+id/lightBulbIconButton"
+                android:id="@+id/lightbulb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
