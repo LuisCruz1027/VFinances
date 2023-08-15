@@ -51,18 +51,7 @@ public class SignUpScreen extends AppCompatActivity
 
                     Intent signUpIntent = new Intent(SignUpScreen.this, OverView.class);
                     startActivity(signUpIntent);
-
-                } else
-                {
-                    confirmPasswordInputLayout.setError(null);
-                    // Passwords do not match, show error message
-                    confirmPasswordInputLayout.setError("Passwords do not match");
                 }
-            } else
-            {
-                confirmPasswordInputLayout.setError(null);
-                // One or both password fields are empty, show error message
-                confirmPasswordInputLayout.setError("Please enter both passwords");
             }
         });
 
