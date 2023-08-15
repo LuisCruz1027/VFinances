@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void run()
             {
-                startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                startActivity(new Intent(MainActivity.this, SignUpScreen.class));
             }
         }, 3000);
     }
