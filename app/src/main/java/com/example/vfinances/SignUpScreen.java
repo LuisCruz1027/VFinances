@@ -49,7 +49,7 @@ public class SignUpScreen extends AppCompatActivity
                     User newUser = new User(name, em, pass);
                     dbHelper.insertUser(newUser);
 
-                    Intent signUpIntent = new Intent(SignUpScreen.this, WalletScreen.class);
+                    Intent signUpIntent = new Intent(SignUpScreen.this, OverView.class);
                     startActivity(signUpIntent);
                 }
             }

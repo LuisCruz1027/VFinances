@@ -171,7 +171,7 @@ public class WalletScreen extends AppCompatActivity
         });
 
         lightBulbIconButton.setOnClickListener(v -> {
-
+            Intent userInsight = new Intent(WalletScreen.this, insightsActivity.class);
         });
     }
     @Override

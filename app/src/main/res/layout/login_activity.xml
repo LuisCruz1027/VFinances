@@ -83,7 +83,7 @@
         android:layout_width="317dp"
         android:layout_height="39dp"
         android:layout_gravity="bottom|center"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="160dp"
         android:fontFamily="@font/nunito_black"
         android:text="Don't have an account? Sign Up"
         android:textColor="#FE850A"
